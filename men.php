@@ -68,9 +68,9 @@
           <span class="white-text card-content">
             <h4>Categories</h4>
             <ul>
-              <li>Men</li>
-              <li>Women</li>
-              <li>Kids</li>
+              <a href="#" class="white"><li>Men</li></a>
+              <a href="#" class="white"><li>Women</li></a>
+              <a href="#" class="white"><li>Kids</li></a>
             </ul>
             <br>
             <h4>Filter</h4>
@@ -82,6 +82,14 @@
               <p>
                 <input type="checkbox" id="test6" />
                 <label for="test6">Yellow</label>
+              </p>
+              <p>
+                <input type="checkbox" id="test7" />
+                <label for="test7">White</label>
+              </p>
+              <p>
+                <input type="checkbox" id="test8" />
+                <label for="test8">Black</label>
               </p>
               <div class="col s4 l4">
                 <button class="btn waves-effect waves-light" type="submit" name="action">Search
