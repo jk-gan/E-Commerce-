@@ -1,0 +1,89 @@
+html {
+  line-height: 0;
+}
+
+.normal-lh {
+  line-height: 21px;
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+.row {
+  padding: 0px;
+  margin: 0px;
+}
+
+nav {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.big-pic {
+  height: 213px;
+  width: 320px;
+}
+
+/* Solve search bar problem in chrome */
+.input-field input[type=search] {
+  height: 64px;
+  margin-bottom: 0px;
+}
+
+.p-absolute {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+p.p-absolute {
+  color: white;
+  font-size: 1.5em;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.layer {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 800ms ease;
+  -moz-transition: all 800ms ease;
+  -ms-transition: all 800ms ease;
+  -o-transition: all 800ms ease;
+  transition: all 800ms ease;
+}
+
+.grid-pic:hover > .layer {
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: all 800ms ease;
+  -moz-transition: all 800ms ease;
+  -ms-transition: all 800ms ease;
+  -o-transition: all 800ms ease;
+  transition: all 800ms ease;
+}
+
+.grid-pic:hover > p.p-absolute {
+  top: 40%;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+footer {
+  line-height: 21px;
+  margin-top: 0px !important;
+}
