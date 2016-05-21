@@ -140,6 +140,30 @@
             </div>
           </div>
         </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/men2.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/men2.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/men2.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
    </main>
