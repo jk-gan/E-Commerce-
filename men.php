@@ -13,55 +13,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Men</title>
   </head>
-  <body>
+  <body class="move-right">
     <header class="no-margin no-padding">
-      <nav>
-       <div class="nav-wrapper blue-grey darken-2">
-         <a href="#" class="brand-logo">E Mall</a>
-         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-         <ul class="right hide-on-med-and-down">
-           <li><a href="#!" class="waves-effect waves-light">Home</a></li>
-           <li><a href="#!" class="waves-effect waves-light">Treding</a></li>
-           <li><a href="#!" class="waves-effect waves-light">Men</a></li>
-           <li><a href="#!" class="waves-effect waves-light">Women</a></li>
-           <li><a href="#!" class="waves-effect waves-light">Kids</a></li>
-           <li>
-            <form>
-            <div class="input-field">
-              <input id="search" type="search" required>
-              <label for="search"><i class="material-icons">search</i></label>
-              <i class="material-icons">close</i>
-            </div>
-            </form>
-          </li>
-          <li><a href="#!" class="waves-effect waves-light"><i class="material-icons">shopping_cart</i></a></li>
-          <li><a class="waves-effect waves-light btn">Login</a></li>
-         </ul>
-         <ul id="mobile-demo" class="side-nav grey">
-           <li><a href="#!" class="waves-effect waves-light">Home</a></li>
-           <li><a href="#!" class="waves-effect waves-light">Treding</a></li>
-           <li><a href="#!" class="waves-effect waves-light">Men</a></li>
-           <li><a href="#!" class="waves-effect waves-light">Women</a></li>
-           <li><a href="#!" class="waves-effect waves-light">Kids</a></li>
-           <li>
-            <form>
-            <div class="input-field">
-              <input id="search" type="search" required>
-              <label for="search"><i class="material-icons">search</i></label>
-              <i class="material-icons">close</i>
-            </div>
-            </form>
-          </li>
-          <li><a href="#!" class="waves-effect waves-light"><i class="material-icons left">shopping_cart</i>Shopping Cart</a></li>
-          <li><a class="waves-effect waves-light btn">Login</a></li>
-         </ul>
-       </div>
-     </nav>
+      <div class="navbar-fixed">
+        <nav>
+         <div class="nav-wrapper blue-grey darken-2">
+           <a href="#" class="brand-logo">E Mall</a>
+           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+           <ul class="right hide-on-med-and-down">
+             <li><a href="#!" class="waves-effect waves-light">Home</a></li>
+             <li><a href="#!" class="waves-effect waves-light">Treding</a></li>
+             <li><a href="#!" class="waves-effect waves-light">Men</a></li>
+             <li><a href="#!" class="waves-effect waves-light">Women</a></li>
+             <li><a href="#!" class="waves-effect waves-light">Kids</a></li>
+             <li>
+              <form>
+              <div class="input-field">
+                <input id="search" type="search" required>
+                <label for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </div>
+              </form>
+            </li>
+            <li><a href="#!" class="waves-effect waves-light"><i class="material-icons">shopping_cart</i></a></li>
+            <li><a class="waves-effect waves-light btn">Login</a></li>
+           </ul>
+           <ul id="mobile-demo" class="side-nav grey">
+             <li><a href="#!" class="waves-effect waves-light">Home</a></li>
+             <li><a href="#!" class="waves-effect waves-light">Treding</a></li>
+             <li><a href="#!" class="waves-effect waves-light">Men</a></li>
+             <li><a href="#!" class="waves-effect waves-light">Women</a></li>
+             <li><a href="#!" class="waves-effect waves-light">Kids</a></li>
+             <li>
+              <form>
+              <div class="input-field">
+                <input id="search" type="search" required>
+                <label for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </div>
+              </form>
+            </li>
+            <li><a href="#!" class="waves-effect waves-light"><i class="material-icons left">shopping_cart</i>Shopping Cart</a></li>
+            <li><a class="waves-effect waves-light btn">Login</a></li>
+           </ul>
+         </div>
+       </nav>
+     </div>
    </header>
 
-   <div class="content normal-lh">
+   <main>
      <div class="row">
-        <div class="col s12 m3">
+       <div class="col m3">
+        <div class="card-panel brown darken-4">
+          <span class="white-text card-content">
+            <h4>Categories</h4>
+            <ul>
+              <li>Men</li>
+              <li>Women</li>
+              <li>Kids</li>
+            </ul>
+            <br>
+            <h4>Filter</h4>
+            <form action="#">
+              <p>
+                <input type="checkbox" id="test5" />
+                <label for="test5">Red</label>
+              </p>
+              <p>
+                <input type="checkbox" id="test6" />
+                <label for="test6">Yellow</label>
+              </p>
+              <div class="col s4 l4">
+                <button class="btn waves-effect waves-light" type="submit" name="action">Search
+                </button>
+              </div>
+            </form>
+          </span>
+        </div>
+       </div>
+       <div class="col m9">
+        <div class="col s12 m4">
           <div class="card">
             <div class="card-image">
               <img src="img/men2.jpg">
@@ -69,7 +100,7 @@
             </div>
           </div>
         </div>
-        <div class="col s12 m3">
+        <div class="col s12 m4">
           <div class="card">
             <div class="card-image">
               <img src="img/men2.jpg">
@@ -77,7 +108,31 @@
             </div>
           </div>
         </div>
-        <div class="col s12 m3">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/men2.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/men2.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/men2.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
           <div class="card">
             <div class="card-image">
               <img src="img/men2.jpg">
@@ -86,7 +141,8 @@
           </div>
         </div>
       </div>
-   </div>
+    </div>
+   </main>
 
    <footer class="page-footer">
     <div class="container">
@@ -121,7 +177,6 @@
     <script type="text/javascript">
       $( document ).ready(function(){
         $(".button-collapse").sideNav();
-        $('.slider').slider({indicators: false, height: 510});
       });
     </script>
   </body>

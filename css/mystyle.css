@@ -2,8 +2,25 @@ html {
   line-height: 0;
 }
 
-.normal-lh {
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header {
+  height: 64px;
+}
+
+main {
+  /*margin-left: 240px;*/
+  flex: 1 0 auto;
   line-height: 21px;
+}
+
+.my-nav {
+  z-index: -100000;
+  margin-top: 64px;
 }
 
 .no-margin {

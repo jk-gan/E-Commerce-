@@ -15,73 +15,51 @@
   </head>
   <body>
     <header class="no-margin no-padding">
-      <nav>
-       <div class="nav-wrapper blue-grey darken-2">
-         <a href="#" class="brand-logo">E Mall</a>
-         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-         <ul class="right hide-on-med-and-down">
-           <li><a href="#!" class="waves-effect waves-light">Home</a></li>
-           <li><a href="#!" class="waves-effect waves-light">Treding</a></li>
-           <li><a href="#!" class="waves-effect waves-light">Men</a></li>
-           <li><a href="#!" class="waves-effect waves-light">Women</a></li>
-           <li><a href="#!" class="waves-effect waves-light">Kids</a></li>
-           <li>
-            <form>
-            <div class="input-field">
-              <input id="search" type="search" required>
-              <label for="search"><i class="material-icons">search</i></label>
-              <i class="material-icons">close</i>
-            </div>
-            </form>
-          </li>
-          <li><a href="#!" class="waves-effect waves-light"><i class="material-icons">shopping_cart</i></a></li>
-          <li><a class="waves-effect waves-light btn">Login</a></li>
-         </ul>
-         <ul id="mobile-demo" class="side-nav grey">
-           <li><a href="#!" class="waves-effect waves-light">Home</a></li>
-           <li><a href="#!" class="waves-effect waves-light">Treding</a></li>
-           <li><a href="#!" class="waves-effect waves-light">Men</a></li>
-           <li><a href="#!" class="waves-effect waves-light">Women</a></li>
-           <li><a href="#!" class="waves-effect waves-light">Kids</a></li>
-           <li>
-            <form>
-            <div class="input-field">
-              <input id="search" type="search" required>
-              <label for="search"><i class="material-icons">search</i></label>
-              <i class="material-icons">close</i>
-            </div>
-            </form>
-          </li>
-          <li><a href="#!" class="waves-effect waves-light"><i class="material-icons left">shopping_cart</i>Shopping Cart</a></li>
-          <li><a class="waves-effect waves-light btn">Login</a></li>
-         </ul>
-       </div>
-     </nav>
-   </header>
-   <!-- <div class="test-div">
-     <div class="content">
-       <div class="row">
-         <div class="col s12 m12 l6">
-           <img src="//emerald.sekizgen.net/wp-content/uploads/2015/07/emerald-209-1024x683.jpg" class="responsive-img">
+      <div class="navbar-fixed">
+        <nav>
+         <div class="nav-wrapper blue-grey darken-2">
+           <a href="#" class="brand-logo">E Mall</a>
+           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+           <ul class="right hide-on-med-and-down">
+             <li><a href="#!" class="waves-effect waves-light">Home</a></li>
+             <li><a href="#!" class="waves-effect waves-light">Treding</a></li>
+             <li><a href="#!" class="waves-effect waves-light">Men</a></li>
+             <li><a href="#!" class="waves-effect waves-light">Women</a></li>
+             <li><a href="#!" class="waves-effect waves-light">Kids</a></li>
+             <li>
+              <form>
+              <div class="input-field">
+                <input id="search" type="search" required>
+                <label for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </div>
+              </form>
+            </li>
+            <li><a href="#!" class="waves-effect waves-light"><i class="material-icons">shopping_cart</i></a></li>
+            <li><a class="waves-effect waves-light btn">Login</a></li>
+           </ul>
+           <ul id="mobile-demo" class="side-nav grey">
+             <li><a href="#!" class="waves-effect waves-light">Home</a></li>
+             <li><a href="#!" class="waves-effect waves-light">Treding</a></li>
+             <li><a href="#!" class="waves-effect waves-light">Men</a></li>
+             <li><a href="#!" class="waves-effect waves-light">Women</a></li>
+             <li><a href="#!" class="waves-effect waves-light">Kids</a></li>
+             <li>
+              <form>
+              <div class="input-field">
+                <input id="search" type="search" required>
+                <label for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </div>
+              </form>
+            </li>
+            <li><a href="#!" class="waves-effect waves-light"><i class="material-icons left">shopping_cart</i>Shopping Cart</a></li>
+            <li><a class="waves-effect waves-light btn">Login</a></li>
+           </ul>
          </div>
-         <div class="col s12 m12 l6 no-padding">
-          <div class="col s12 m6 l6 no-padding">
-            <img width="319.5" height="213.5" src="img/men1.jpg">
-
-          </div>
-          <div class="col s12 m6 l6 no-padding">
-            <img width="319.5" height="213.5" src="img/men1.jpg">
-          </div>
-          <div class="col s12 m6 l6 no-padding">
-            <img width="319.5" height="213.5" src="img/men1.jpg">
-          </div>
-          <div class="col s12 m6 l6 no-padding">
-            <img width="319.5" height="213.5" src="img/men1.jpg">
-          </div>
-         </div>
-      </div>
+       </nav>
      </div>
-   </div> -->
+   </header>
 
    <div class="content">
      <div class="slider">
