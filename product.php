@@ -62,7 +62,11 @@
    </header>
 
    <main>
-    
+     <div class="row">
+       <div class="col s12 m12 l4 offset-l1">
+         <img src="img/men3.jpg" class="responsive-img" />
+       </div>
+     </div>
    </main>
 
    <footer class="page-footer">
