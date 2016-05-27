@@ -11,7 +11,7 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Men</title>
+    <title>Product</title>
   </head>
   <body class="move-right">
     <header class="no-margin no-padding">
@@ -62,129 +62,7 @@
    </header>
 
    <main>
-     <div class="row box">
-       <div class="col m12 l3 filter">
-        <div class="card-panel brown darken-4" style="height: 480px;">
-          <span class="white-text card-content">
-            <h4>Categories</h4>
-            <ul>
-              <a href="#" class="white"><li>Men</li></a>
-              <a href="#" class="white"><li>Women</li></a>
-              <a href="#" class="white"><li>Kids</li></a>
-            </ul>
-            <br>
-            <h4>Filter</h4>
-            <form action="#">
-              <p>
-                <input type="checkbox" id="test5" />
-                <label for="test5">Red</label>
-              </p>
-              <p>
-                <input type="checkbox" id="test6" />
-                <label for="test6">Yellow</label>
-              </p>
-              <p>
-                <input type="checkbox" id="test7" />
-                <label for="test7">White</label>
-              </p>
-              <p>
-                <input type="checkbox" id="test8" />
-                <label for="test8">Black</label>
-              </p>
-              <div class="col s4 l4">
-                <button class="btn waves-effect waves-light" type="submit" name="action">Search
-                </button>
-              </div>
-            </form>
-          </span>
-        </div>
-       </div>
-       <div class="col m12 l9">
-        <div class="col s12 m6 l4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/men2.jpg">
-              <span class="card-title">Card Title</span>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/men2.jpg">
-              <span class="card-title">Card Title</span>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/men2.jpg">
-              <span class="card-title">Card Title</span>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/men2.jpg">
-              <span class="card-title">Card Title</span>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/men2.jpg">
-              <span class="card-title">Card Title</span>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/men2.jpg">
-              <span class="card-title">Card Title</span>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/men2.jpg">
-              <span class="card-title">Card Title</span>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/men2.jpg">
-              <span class="card-title">Card Title</span>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/men2.jpg">
-              <span class="card-title">Card Title</span>
-            </div>
-          </div>
-        </div>
-        <div class="col m4 offset-m4">
-          <ul class="pagination">
-            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-            <li class="active"><a href="#!">1</a></li>
-            <li class="waves-effect"><a href="#!">2</a></li>
-            <li class="waves-effect"><a href="#!">3</a></li>
-            <li class="waves-effect"><a href="#!">4</a></li>
-            <li class="waves-effect"><a href="#!">5</a></li>
-            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    
    </main>
 
    <footer class="page-footer">

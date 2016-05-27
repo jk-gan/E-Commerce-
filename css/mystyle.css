@@ -1,3 +1,7 @@
+.box {
+  border: 1px solid black;
+}
+
 html {
   line-height: 0;
 }
@@ -107,4 +111,18 @@ footer {
 
 .white {
   color: white;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .filter {
+    display: none;
+  }
 }
