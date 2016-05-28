@@ -121,6 +121,21 @@ footer {
   float: right;
 }
 
+.small-width {
+  width: 17px;
+  cursor: pointer;
+}
+
+.discription {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.4px;
+}
+
+.rate {
+  width: 110px;
+}
 @media only screen and (max-width: 600px) {
   .filter {
     display: none;

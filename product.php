@@ -62,9 +62,55 @@
    </header>
 
    <main>
+     <br>
+     <br>
      <div class="row">
-       <div class="col s12 m12 l4 offset-l1">
-         <img src="img/men3.jpg" class="responsive-img" />
+       <div class="col s12 m10 offset-m1 l5 offset-l1">
+         <img src="img/men3.jpg" class="responsive-img materialboxed" data-caption="A good quality men suit" />
+       </div>
+       <div class="col s12 m10 offset-m1 l5">
+         <h3>Men Black Suit</h3>
+         <h4>RM 150</h4>
+         <div class="rate tooltipped" data-position="left" data-delay="20" data-tooltip="1 customer review">
+           <i class="tiny material-icons small-width">star_rate</i>
+           <i class="tiny material-icons small-width">star_rate</i>
+           <i class="tiny material-icons small-width">star_rate</i>
+           <i class="tiny material-icons small-width">star_half</i>
+           <i class="tiny material-icons small-width">star_border</i>
+         </div>
+         <div class="discription section">
+           <p>
+             Material Design Lite is a light-weight implementation of design, specifically crafted for the web. For more detailed guidelines and specifications for other platforms please refer to the Material Design site. Thats the spirit of material design. Get started now.
+           </p>
+         </div>
+         <br>
+         <div class="choices">
+           <div class="input-field col l8 offset-l2">
+              <select>
+                <option value="1" selected>S</option>
+                <option value="2">M</option>
+                <option value="3">L</option>
+              </select>
+              <label>Size</label>
+            </div>
+            <div class="input-field col l8 offset-l2">
+               <select>
+                 <option value="1" selected>Black</option>
+                 <option value="2">Blue</option>
+                 <option value="3">Grey</option>
+               </select>
+               <label>Color</label>
+            </div>
+            <br>
+           <div class="input-field col l2 offset-l2">
+             <input type="number" name="name" value="1" min="1">
+           </div>
+           <div class="col l2 offset-l2b">
+             <button class="btn-floating btn-large waves-effect waves-light red tooltipped" type="submit" name="action" data-position="top" data-delay="20" data-tooltip="Add to Cart" onclick="Materialize.toast('Successfully added to cart', 2000);">
+               <i class="material-icons">add</i>
+             </button>
+           </div>
+         </div>
        </div>
      </div>
    </main>
@@ -102,6 +148,7 @@
     <script type="text/javascript">
       $( document ).ready(function(){
         $(".button-collapse").sideNav();
+        $('select').material_select();
       });
     </script>
   </body>
