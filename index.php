@@ -14,6 +14,22 @@
     <title>Home</title>
   </head>
   <body>
+    <div id="preloader">
+      <div id="status">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
     <header class="no-margin no-padding">
       <div class="navbar-fixed">
         <nav>
@@ -158,6 +174,7 @@
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/myscript.js"></script>
 
     <script type="text/javascript">
       $( document ).ready(function(){

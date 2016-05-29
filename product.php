@@ -105,14 +105,43 @@
            <div class="input-field col l2 offset-l2">
              <input type="number" name="name" value="1" min="1">
            </div>
-           <div class="col l2 offset-l2b">
+           <div class="col l2 offset-l2">
              <button class="btn-floating btn-large waves-effect waves-light red tooltipped" type="submit" name="action" data-position="top" data-delay="20" data-tooltip="Add to Cart" onclick="Materialize.toast('Successfully added to cart', 2000);">
                <i class="material-icons">add</i>
              </button>
            </div>
+           <div class="col l8 offset-l2">
+             <p>
+               Category: <a href="#">Men</a>
+             </p>
+           </div>
          </div>
        </div>
      </div>
+     <div class="row">
+    <div class="col s10 offset-s1">
+      <ul class="tabs">
+        <li class="tab col s3 waves-effect waves-orange"><a class="active" href="#test1">Description</a></li>
+        <li class="tab col s3 waves-effect waves-orange"><a href="#test2">Additional Information</a></li>
+        <li class="tab col s3 waves-effect waves-orange"><a href="#test3">Review <span class="badge">4</span></a></li>
+      </ul>
+      <div class="divider"></div>
+    </div>
+    <div id="test1" class="col s10 offset-s1 tab-content">
+      <br>
+      Jean shorts flannel banjo art party put a bird on it, bitters etsy. Leggings retro 8-bit, cray kinfolk occupy jean shorts tofu truffaut put a bird on it. Selvage mumblecore brooklyn, master cleanse craft beer viral portland. Etsy PBR&B freegan, flexitarian craft beer offal art party hoodie locavore typewriter. Selvage pop-up intelligentsia XOXO gastropub offal. Deep v PBR&B franzen, knausgaard 8-bit slow-carb williamsburg lomo meh. Tilde deep v pabst kale chips truffaut, 8-bit +1 street art.
+
+      Helvetica pug direct trade, knausgaard forage sriracha messenger bag. Locavore hammock trust fund, flannel jean shorts affogato green juice banh mi messenger bag normcore VHS PBR&B vice put a bird on it irony. Leggings fap bespoke chicharrones deep v, meggings austin retro food truck biodiesel. Hashtag williamsburg chambray, beard keffiyeh street art four loko leggings kogi mlkshk whatever. Before they sold out beard pickled irony whatever, authentic four loko affogato gochujang gentrify williamsburg franzen marfa post-ironic. Flannel bushwick fixie chartreuse hella. Ethical single-origin coffee irony everyday carry.
+    </div>
+    <div id="test2" class="col s10 offset-s1 tab-content">
+      <br>
+      <ul class="collection">
+        <li class="collection-item">Size <span class="secondary-content">Small, Medium, Large</span></li>
+        <li class="collection-item">Color <span class="secondary-content">Black, Blue, Grey</span></li>
+      </ul>
+    </div>
+    <div id="test3" class="col s10 offset-s1 tab-content">Test 3</div>
+  </div>
    </main>
 
    <footer class="page-footer">
