@@ -12,34 +12,45 @@ $error = false;
 
 //check if form is submitted
 if (isset($_POST['signup'])) {
-    $name = mysqli_real_escape_string($con, $_POST['name']);
-    $email = mysqli_real_escape_string($con, $_POST['email']);
-    $password = mysqli_real_escape_string($con, $_POST['password']);
-    $cpassword = mysqli_real_escape_string($con, $_POST['cpassword']);
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $cpassword = $_POST['cpassword'];
+    $address = $_POST['address'];
+	  $contactno = $_POST['contactno'];
 
     //name can contain only alpha characters and space
-    if (!preg_match("/^[a-zA-Z ]+$/",$name)) {
+    if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
         $error = true;
         $name_error = "Name must contain only alphabets and space";
     }
-    if(!filter_var($email,FILTER_VALIDATE_EMAIL)) {
+    if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
         $error = true;
         $email_error = "Please Enter Valid Email ID";
     }
-    if(strlen($password) < 6) {
+    if(strlen($password) < 8) {
         $error = true;
-        $password_error = "Password must be minimum of 6 characters";
+        $password_error = "Password must be minimum of 8 characters";
     }
     if($password != $cpassword) {
         $error = true;
         $cpassword_error = "Password and Confirm Password doesn't match";
     }
+    if (!preg_match('/.{2,60}$/', $address)) {
+  		$error = true;
+  		$address_error = "Street address must be valid";
+  	}
+  	if(!preg_match("/^[+#*\(\)\[\]]*([0-9][ ext+-pw#*\(\)\[\]]*){6,45}$/", $contactno)) {
+  		$error = true;
+  		$contactno_error = "Please Enter Valid Phone Number";
+  	}
     if (!$error) {
-        if(mysqli_query($con, "INSERT INTO users(name,email,password) VALUES('" . $name . "', '" . $email . "', '" . md5($password) . "')")) {
-            $successmsg = "Successfully Registered! <a href='login.php'>Click here to Login</a>";
-        } else {
-            $errormsg = "Error in registering...Please try again later!";
-        }
+      $sql = "INSERT INTO customer(customer_name, customer_email, password, customer_address, contact_number) VALUES('" . $name . "', '" . $email . "', '" . md5($password) . "', '" . $address . "', '" . $contactno . "')";
+      if(mysqli_query($conn, $sql)) {
+          $successmsg = "Successfully Registered! <a href='login.php'>Click here to Login</a>";
+      } else {
+          $errormsg = "Error: " . $sql . "<br>" . mysqli_error($conn);
+      }
     }
 }
 ?>
@@ -67,6 +78,8 @@ if (isset($_POST['signup'])) {
           <span class="text-danger"><?php if (isset($email_error)) echo $email_error; ?></span><br>
           <span class="text-danger"><?php if (isset($password_error)) echo $password_error; ?></span><br>
           <span class="text-danger"><?php if (isset($cpassword_error)) echo $cpassword_error; ?></span><br>
+          <span class="text-danger"><?php if (isset($contactno_error)) echo $contactno_error; ?></span><br>
+          <span class="text-danger"><?php if (isset($address_error)) echo $address_error; ?></span><br>
           <span class="text-success"><?php if (isset($successmsg)) { echo $successmsg; } ?></span><br>
           <span class="text-danger"><?php if (isset($errormsg)) { echo $errormsg; } ?></span><br>
           <div class="register-card blue-grey lighten-5 z-depth-2">
@@ -88,15 +101,15 @@ if (isset($_POST['signup'])) {
                 <label for="cf_password">Confirmation Password</label>
               </div>
               <div class="input-field col s10 offset-s1 m10 offset-m1 l8 offset-l2">
-                <input id="phone" type="text" class="validate">
+                <input id="phone" type="text" class="validate" name="contactno" class="validate">
                 <label for="phone">Phone</label>
               </div>
               <div class="input-field col s10 offset-s1 m10 offset-m1 l8 offset-l2">
-                <textarea id="address" class="materialize-textarea"></textarea>
+                <textarea id="address" class="materialize-textarea" name="address"></textarea>
                 <label for="address">Address</label>
               </div>
               <div class="col s4 offset-s4 l4 offset-l4">
-                <button class="btn waves-effect waves-light" type="submit" name="signup">Login
+                <button class="btn waves-effect waves-light" type="submit" name="signup">Register
                 </button>
               </div>
             </div>

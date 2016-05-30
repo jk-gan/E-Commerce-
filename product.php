@@ -35,7 +35,7 @@
               </div>
               </form>
             </li>
-            <li><a href="#!" class="waves-effect waves-light"><i class="material-icons">shopping_cart</i></a></li>
+            <li><a href="#" data-activates="slide-out" class="btn-collapse waves-effect waves-light"><i class="material-icons">shopping_cart</i></a></li>
             <li><a class="waves-effect waves-light btn">Login</a></li>
            </ul>
            <ul id="mobile-demo" class="side-nav grey">
@@ -119,30 +119,80 @@
        </div>
      </div>
      <div class="row">
-    <div class="col s10 offset-s1">
-      <ul class="tabs">
-        <li class="tab col s3 waves-effect waves-orange"><a class="active" href="#test1">Description</a></li>
-        <li class="tab col s3 waves-effect waves-orange"><a href="#test2">Additional Information</a></li>
-        <li class="tab col s3 waves-effect waves-orange"><a href="#test3">Review <span class="badge">4</span></a></li>
-      </ul>
-      <div class="divider"></div>
-    </div>
-    <div id="test1" class="col s10 offset-s1 tab-content">
-      <br>
-      Jean shorts flannel banjo art party put a bird on it, bitters etsy. Leggings retro 8-bit, cray kinfolk occupy jean shorts tofu truffaut put a bird on it. Selvage mumblecore brooklyn, master cleanse craft beer viral portland. Etsy PBR&B freegan, flexitarian craft beer offal art party hoodie locavore typewriter. Selvage pop-up intelligentsia XOXO gastropub offal. Deep v PBR&B franzen, knausgaard 8-bit slow-carb williamsburg lomo meh. Tilde deep v pabst kale chips truffaut, 8-bit +1 street art.
+      <div class="col s10 offset-s1">
+        <ul class="tabs">
+          <li class="tab col s3 waves-effect waves-orange"><a class="active" href="#test1">Description</a></li>
+          <li class="tab col s3 waves-effect waves-orange"><a href="#test2">Additional Information</a></li>
+          <li class="tab col s3 waves-effect waves-orange"><a href="#test3">Review <span class="badge">4</span></a></li>
+        </ul>
+        <div class="divider"></div>
+      </div>
+      <div id="test1" class="col s10 offset-s1 tab-content">
+        <br>
+        <p>
+          Jean shorts flannel banjo art party put a bird on it, bitters etsy. Leggings retro 8-bit, cray kinfolk occupy jean shorts tofu truffaut put a bird on it. Selvage mumblecore brooklyn, master cleanse craft beer viral portland. Etsy PBR&B freegan, flexitarian craft beer offal art party hoodie locavore typewriter. Selvage pop-up intelligentsia XOXO gastropub offal. Deep v PBR&B franzen, knausgaard 8-bit slow-carb williamsburg lomo meh. Tilde deep v pabst kale chips truffaut, 8-bit +1 street art.
+        </p>
 
-      Helvetica pug direct trade, knausgaard forage sriracha messenger bag. Locavore hammock trust fund, flannel jean shorts affogato green juice banh mi messenger bag normcore VHS PBR&B vice put a bird on it irony. Leggings fap bespoke chicharrones deep v, meggings austin retro food truck biodiesel. Hashtag williamsburg chambray, beard keffiyeh street art four loko leggings kogi mlkshk whatever. Before they sold out beard pickled irony whatever, authentic four loko affogato gochujang gentrify williamsburg franzen marfa post-ironic. Flannel bushwick fixie chartreuse hella. Ethical single-origin coffee irony everyday carry.
+        <p>
+          Helvetica pug direct trade, knausgaard forage sriracha messenger bag. Locavore hammock trust fund, flannel jean shorts affogato green juice banh mi messenger bag normcore VHS PBR&B vice put a bird on it irony. Leggings fap bespoke chicharrones deep v, meggings austin retro food truck biodiesel. Hashtag williamsburg chambray, beard keffiyeh street art four loko leggings kogi mlkshk whatever. Before they sold out beard pickled irony whatever, authentic four loko affogato gochujang gentrify williamsburg franzen marfa post-ironic. Flannel bushwick fixie chartreuse hella. Ethical single-origin coffee irony everyday carry.
+        </p>
+      </div>
+      <div id="test2" class="col s10 offset-s1 tab-content">
+        <br>
+        <ul class="collection">
+          <li class="collection-item">Size <span class="secondary-content">Small, Medium, Large</span></li>
+          <li class="collection-item">Color <span class="secondary-content">Black, Blue, Grey</span></li>
+        </ul>
+      </div>
+      <div id="test3" class="col s10 offset-s1 tab-content">Test 3</div>
     </div>
-    <div id="test2" class="col s10 offset-s1 tab-content">
-      <br>
-      <ul class="collection">
-        <li class="collection-item">Size <span class="secondary-content">Small, Medium, Large</span></li>
-        <li class="collection-item">Color <span class="secondary-content">Black, Blue, Grey</span></li>
-      </ul>
-    </div>
-    <div id="test3" class="col s10 offset-s1 tab-content">Test 3</div>
-  </div>
    </main>
+
+   <nav>
+     <ul id="slide-out" class="side-nav">
+       <h4 class="cart-title">Cart</h4>
+       <div class="divider"></div>
+       <li>
+        <div class="row valign-wrapper">
+          <div class="col s3">
+            <img src="img/men.jpg" alt="" class="circle responsive-img">
+          </div>
+          <div class="col s8">
+            <p class="black-text cart-content">
+              Men Black Suit
+            </p>
+            <span class="black-text cart-price">
+              RM 100
+            </span>
+          </div>
+        </div>
+       </li>
+       <li>
+         <div class="row valign-wrapper">
+           <div class="col s3">
+             <img src="img/men1.jpg" alt="" class="circle responsive-img">
+           </div>
+           <div class="col s8">
+             <p class="black-text">
+               Men Black Suit
+             </p>
+           </div>
+         </div>
+       </li>
+       <li>
+         <div class="row valign-wrapper">
+           <div class="col s3">
+             <img src="img/men2.jpg" alt="" class="circle responsive-img">
+           </div>
+           <div class="col s8">
+             <p class="black-text">
+               Men Black Suit
+             </p>
+           </div>
+         </div>
+       </li>
+     </ul>
+   </nav>
 
    <footer class="page-footer">
     <div class="container">
@@ -168,6 +218,8 @@
       <a class="grey-text text-lighten-4 right" href="#!">Made with  <i class="material-icons">favorite</i> by E-mall team.</a>
       </div>
     </div>
+  </main>
+
   </footer>
 
     <!--Import jQuery before materialize.js-->
@@ -177,6 +229,7 @@
     <script type="text/javascript">
       $( document ).ready(function(){
         $(".button-collapse").sideNav();
+        $(".btn-collapse").sideNav();
         $('select').material_select();
       });
     </script>

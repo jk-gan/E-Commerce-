@@ -62,7 +62,7 @@
    </header>
 
    <main>
-     <div class="row box">
+     <div class="row box hide-on-small-only">
        <div class="col m12 l3 filter">
         <div class="card-panel brown darken-4" style="height: 480px;">
           <span class="white-text card-content">
