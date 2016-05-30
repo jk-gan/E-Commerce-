@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+$logged_in = false;
+
+if(isset($_SESSION['usr_id'])) {
+    // header("Location: login.php");
+    $logged_in = true;
+}
+
+include_once 'dbconnect.php';
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -34,12 +47,12 @@
       <div class="navbar-fixed">
         <nav>
          <div class="nav-wrapper blue-grey darken-2">
-           <a href="#" class="brand-logo">E Mall</a>
+           <a href="index.php" class="brand-logo">E Mall</a>
            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
            <ul class="right hide-on-med-and-down">
              <li><a href="#!" class="waves-effect waves-light">Home</a></li>
              <li><a href="#!" class="waves-effect waves-light">Treding</a></li>
-             <li><a href="#!" class="waves-effect waves-light">Men</a></li>
+             <li><a href="men.php" class="waves-effect waves-light">Men</a></li>
              <li><a href="#!" class="waves-effect waves-light">Women</a></li>
              <li><a href="#!" class="waves-effect waves-light">Kids</a></li>
              <li>
@@ -51,8 +64,14 @@
               </div>
               </form>
             </li>
-            <li><a href="#!" class="waves-effect waves-light"><i class="material-icons">shopping_cart</i></a></li>
-            <li><a class="waves-effect waves-light btn">Login</a></li>
+            <li><a href="#" data-activates="slide-out" class="btn-collapse waves-effect waves-light"><i class="material-icons">shopping_cart</i></a></li>
+              <?php if($logged_in) { ?>
+                <li><?php echo $_SESSION['usr_email']; ?></li>
+                <li><a href="logout.php" class="waves-effect waves-light btn">Logout</a></li>
+              <?php } else { ?>
+                <li><a href="login.php" class="waves-effect waves-light btn">Login</a></li>
+              <?php } ?>
+            </li>
            </ul>
            <ul id="mobile-demo" class="side-nav grey">
              <li><a href="#!" class="waves-effect waves-light">Home</a></li>
@@ -145,6 +164,52 @@
 
    </div>
 
+   <nav>
+     <ul id="slide-out" class="side-nav">
+       <h4 class="cart-title">Cart</h4>
+       <div class="divider"></div>
+       <li>
+        <div class="row valign-wrapper">
+          <div class="col s3">
+            <img src="img/men.jpg" alt="" class="circle responsive-img">
+          </div>
+          <div class="col s8">
+            <p class="black-text cart-content">
+              Men Black Suit
+            </p>
+            <span class="black-text cart-price">
+              RM 100
+            </span>
+          </div>
+        </div>
+       </li>
+       <li>
+         <div class="row valign-wrapper">
+           <div class="col s3">
+             <img src="img/men1.jpg" alt="" class="circle responsive-img">
+           </div>
+           <div class="col s8">
+             <p class="black-text">
+               Men Black Suit
+             </p>
+           </div>
+         </div>
+       </li>
+       <li>
+         <div class="row valign-wrapper">
+           <div class="col s3">
+             <img src="img/men2.jpg" alt="" class="circle responsive-img">
+           </div>
+           <div class="col s8">
+             <p class="black-text">
+               Men Black Suit
+             </p>
+           </div>
+         </div>
+       </li>
+     </ul>
+   </nav>
+
    <footer class="page-footer">
     <div class="container">
       <div class="row">
@@ -171,7 +236,7 @@
     </div>
   </footer>
 
-    <!--Import jQuery before materialize.js-->
+    <!--Import jQuery  before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/myscript.js"></script>
@@ -179,6 +244,7 @@
     <script type="text/javascript">
       $( document ).ready(function(){
         $(".button-collapse").sideNav();
+        $(".btn-collapse").sideNav();
         $('.slider').slider({indicators: false, height: 510});
       });
     </script>

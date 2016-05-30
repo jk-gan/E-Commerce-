@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if(isset($_SESSION['usr_id'])!="") {
+if(isset($_SESSION['usr_id'])) {
     header("Location: index.php");
 }
 
@@ -17,6 +17,7 @@ if (isset($_POST['login'])) {
   if ($row = mysqli_fetch_array($result)) {
     $_SESSION['usr_id'] = $row['customer_id'];
     $_SESSION['usr_name'] = $row['customer_name'];
+    $_SESSION['usr_email'] = $row['customer_email'];
     header("Location: index.php");
   } else {
     $errormsg = "Incorrect Email or Password!!!";

@@ -18,12 +18,12 @@
       <div class="navbar-fixed">
         <nav>
          <div class="nav-wrapper blue-grey darken-2">
-           <a href="#" class="brand-logo">E Mall</a>
+           <a href="index.php" class="brand-logo">E Mall</a>
            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
            <ul class="right hide-on-med-and-down">
              <li><a href="#!" class="waves-effect waves-light">Home</a></li>
              <li><a href="#!" class="waves-effect waves-light">Treding</a></li>
-             <li><a href="#!" class="waves-effect waves-light">Men</a></li>
+             <li><a href="men.php" class="waves-effect waves-light">Men</a></li>
              <li><a href="#!" class="waves-effect waves-light">Women</a></li>
              <li><a href="#!" class="waves-effect waves-light">Kids</a></li>
              <li>
@@ -36,7 +36,13 @@
               </form>
             </li>
             <li><a href="#" data-activates="slide-out" class="btn-collapse waves-effect waves-light"><i class="material-icons">shopping_cart</i></a></li>
-            <li><a class="waves-effect waves-light btn">Login</a></li>
+              <?php if($logged_in) { ?>
+                <li><?php echo $_SESSION['usr_email']; ?></li>
+                <li><a href="logout.php" class="waves-effect waves-light btn">Logout</a></li>
+              <?php } else { ?>
+                <li><a href="login.php" class="waves-effect waves-light btn">Login</a></li>
+              <?php } ?>
+            </li>
            </ul>
            <ul id="mobile-demo" class="side-nav grey">
              <li><a href="#!" class="waves-effect waves-light">Home</a></li>
