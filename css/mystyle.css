@@ -168,13 +168,39 @@ footer {
 }
 
 .cart-content {
-  padding-top: 0px;
-  line-height: 14px;
+  line-height: 22px;
+  font-size: 15px;
+  margin-top: 12px;
 }
 
 .cart-price {
-  line-height: 10px;
+  font-size: 10px;
 }
+
+.cart-item {
+  height: 70px;
+}
+
+.cart-description {
+  height: 70px;
+}
+
+.cart-subtotal {
+  color: black;
+  text-align: center;
+  height: 40px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.cart-bottom {
+  /*position: absolute;*/
+}
+
+.cart {
+  overflow: scroll;
+}
+
 
 @media only screen and (max-width: 992px) {
   .tab-content {
