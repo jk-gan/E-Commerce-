@@ -47,7 +47,7 @@ include_once 'dbconnect.php';
       <div class="navbar-fixed">
         <nav>
          <div class="nav-wrapper blue-grey darken-2">
-           <a href="index.php" class="brand-logo">E Mall</a>
+           <a href="index.php" class="brand-logo">&nbsp;&nbsp;&nbsp;E Mall</a>
            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
            <ul class="right hide-on-med-and-down">
              <li><a href="#!" class="waves-effect waves-light">Home</a></li>
@@ -164,49 +164,122 @@ include_once 'dbconnect.php';
 
    </div>
 
-   <nav>
+   <nav class="cart-nav">
      <ul id="slide-out" class="side-nav">
        <h4 class="cart-title">Cart</h4>
        <div class="divider"></div>
-       <li>
-        <div class="row valign-wrapper">
-          <div class="col s3">
-            <img src="img/men.jpg" alt="" class="circle responsive-img">
-          </div>
-          <div class="col s8">
-            <p class="black-text cart-content">
-              Men Black Suit
-            </p>
-            <span class="black-text cart-price">
-              RM 100
-            </span>
-          </div>
-        </div>
-       </li>
-       <li>
-         <div class="row valign-wrapper">
-           <div class="col s3">
-             <img src="img/men1.jpg" alt="" class="circle responsive-img">
-           </div>
-           <div class="col s8">
-             <p class="black-text">
-               Men Black Suit
-             </p>
-           </div>
+       <div class="cart">
+         <ul class="cart-list">
+           <li class="cart-item">
+            <div class="row valign-wrapper">
+              <div class="col s3">
+                <img src="img/men1.jpg" alt="" class="circle responsive-img valign">
+              </div>
+              <div class="col s8 cart-description">
+                <span class="black-text cart-content valign">
+                  Men Black Suit <br><span class="blue-grey-text text-lighten-2">RM 100</span>
+                </span>
+              </div>
+            </div>
+           </li>
+           <li class="cart-item">
+            <div class="row valign-wrapper">
+              <div class="col s3">
+                <img src="img/men1.jpg" alt="" class="circle responsive-img valign">
+              </div>
+              <div class="col s8 cart-description">
+                <span class="black-text cart-content valign">
+                  Men Black Suit <br><span class="blue-grey-text text-lighten-2">RM 100</span>
+                </span>
+              </div>
+            </div>
+           </li>
+           <li class="cart-item">
+            <div class="row valign-wrapper">
+              <div class="col s3">
+                <img src="img/men1.jpg" alt="" class="circle responsive-img valign">
+              </div>
+              <div class="col s8 cart-description">
+                <span class="black-text cart-content valign">
+                  Men Black Suit <br><span class="blue-grey-text text-lighten-2">RM 100</span>
+                </span>
+              </div>
+            </div>
+           </li>
+           <li class="cart-item">
+            <div class="row valign-wrapper">
+              <div class="col s3">
+                <img src="img/men1.jpg" alt="" class="circle responsive-img valign">
+              </div>
+              <div class="col s8 cart-description">
+                <span class="black-text cart-content valign">
+                  Men Black Suit <br><span class="blue-grey-text text-lighten-2">RM 100</span>
+                </span>
+              </div>
+            </div>
+           </li>
+           <li class="cart-item">
+            <div class="row valign-wrapper">
+              <div class="col s3">
+                <img src="img/men1.jpg" alt="" class="circle responsive-img valign">
+              </div>
+              <div class="col s8 cart-description">
+                <span class="black-text cart-content valign">
+                  Men Black Suit <br><span class="blue-grey-text text-lighten-2">RM 100</span>
+                </span>
+              </div>
+            </div>
+           </li>
+           <li class="cart-item">
+            <div class="row valign-wrapper">
+              <div class="col s3">
+                <img src="img/men1.jpg" alt="" class="circle responsive-img valign">
+              </div>
+              <div class="col s8 cart-description">
+                <span class="black-text cart-content valign">
+                  Men Black Suit <br><span class="blue-grey-text text-lighten-2">RM 100</span>
+                </span>
+              </div>
+            </div>
+           </li>
+           <li class="cart-item">
+            <div class="row valign-wrapper">
+              <div class="col s3">
+                <img src="img/men1.jpg" alt="" class="circle responsive-img valign">
+              </div>
+              <div class="col s8 cart-description">
+                <span class="black-text cart-content valign">
+                  Men Black Suit <br><span class="blue-grey-text text-lighten-2">RM 100</span>
+                </span>
+              </div>
+            </div>
+           </li>
+           <li class="cart-item">
+            <div class="row valign-wrapper">
+              <div class="col s3">
+                <img src="img/men2.jpg" alt="" class="circle responsive-img valign">
+              </div>
+              <div class="col s8 cart-description">
+                <span class="black-text cart-content valign">
+                  Men Black Suit <br><span class="blue-grey-text text-lighten-2">RM 100</span>
+                </span>
+              </div>
+            </div>
+           </li>
+         </ul>
+
+       </div>
+       <div class="cart-bottom">
+         <div class="divider"></div>
+         <div class="cart-subtotal">
+           Subtotal: RM 300.00
          </div>
-       </li>
-       <li>
-         <div class="row valign-wrapper">
-           <div class="col s3">
-             <img src="img/men2.jpg" alt="" class="circle responsive-img">
-           </div>
-           <div class="col s8">
-             <p class="black-text">
-               Men Black Suit
-             </p>
-           </div>
+         <div class="divider"></div>
+         <div class="cart-btns">
+           <a href="cart.php" class="waves-effect waves-teal btn-flat b-small">View</a>
+           <a href="checkout.php" class="waves-effect waves-teal btn-flat b-small">Checkout</a>
          </div>
-       </li>
+       </div>
      </ul>
    </nav>
 

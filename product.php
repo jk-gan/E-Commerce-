@@ -18,7 +18,7 @@
       <div class="navbar-fixed">
         <nav>
          <div class="nav-wrapper blue-grey darken-2">
-           <a href="index.php" class="brand-logo">E Mall</a>
+           <a href="index.php" class="brand-logo">&nbsp;&nbsp;&nbsp;E Mall</a>
            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
            <ul class="right hide-on-med-and-down">
              <li><a href="#!" class="waves-effect waves-light">Home</a></li>
@@ -77,18 +77,18 @@
        <div class="col s12 m10 offset-m1 l5">
          <h3>Men Black Suit</h3>
          <h4>RM 150</h4>
-         <div class="rate tooltipped" data-position="left" data-delay="20" data-tooltip="1 customer review">
+         <!-- <div class="rate tooltipped" data-position="left" data-delay="20" data-tooltip="1 customer review">
            <i class="tiny material-icons small-width">star_rate</i>
            <i class="tiny material-icons small-width">star_rate</i>
            <i class="tiny material-icons small-width">star_rate</i>
            <i class="tiny material-icons small-width">star_half</i>
            <i class="tiny material-icons small-width">star_border</i>
-         </div>
-         <div class="discription section">
+         </div> -->
+         <!-- <div class="discription section">
            <p>
              Material Design Lite is a light-weight implementation of design, specifically crafted for the web. For more detailed guidelines and specifications for other platforms please refer to the Material Design site. Thats the spirit of material design. Get started now.
            </p>
-         </div>
+         </div> -->
          <br>
          <div class="choices">
            <div class="input-field col l8 offset-l2">
@@ -107,7 +107,6 @@
                </select>
                <label>Color</label>
             </div>
-            <br>
            <div class="input-field col l2 offset-l2">
              <input type="number" name="name" value="1" min="1">
            </div>
@@ -116,7 +115,7 @@
                <i class="material-icons">add</i>
              </button>
            </div>
-           <div class="col l8 offset-l2">
+           <div class="col l8 offset-l2 offset-m0 offset-s8">
              <p>
                Category: <a href="#">Men</a>
              </p>
@@ -124,12 +123,12 @@
          </div>
        </div>
      </div>
+     <br>
      <div class="row">
       <div class="col s10 offset-s1">
         <ul class="tabs">
           <li class="tab col s3 waves-effect waves-orange"><a class="active" href="#test1">Description</a></li>
           <li class="tab col s3 waves-effect waves-orange"><a href="#test2">Additional Information</a></li>
-          <li class="tab col s3 waves-effect waves-orange"><a href="#test3">Review <span class="badge">4</span></a></li>
         </ul>
         <div class="divider"></div>
       </div>
@@ -150,51 +149,113 @@
           <li class="collection-item">Color <span class="secondary-content">Black, Blue, Grey</span></li>
         </ul>
       </div>
-      <div id="test3" class="col s10 offset-s1 tab-content">Test 3</div>
     </div>
    </main>
 
-   <nav>
+   <nav class="cart-nav">
      <ul id="slide-out" class="side-nav">
        <h4 class="cart-title">Cart</h4>
        <div class="divider"></div>
        <div class="cart">
-         <li class="cart-item">
-          <div class="row valign-wrapper">
-            <div class="col s3">
-              <img src="img/men1.jpg" alt="" class="circle responsive-img valign">
+         <ul class="cart-list">
+           <li class="cart-item">
+            <div class="row valign-wrapper">
+              <div class="col s3">
+                <img src="img/men1.jpg" alt="" class="circle responsive-img valign">
+              </div>
+              <div class="col s8 cart-description">
+                <span class="black-text cart-content valign">
+                  Men Black Suit <br><span class="blue-grey-text text-lighten-2">RM 100</span>
+                </span>
+              </div>
             </div>
-            <div class="col s8 cart-description">
-              <span class="black-text cart-content valign">
-                Men Black Suit <br><span class="blue-grey-text text-lighten-2">RM 100</span>
-              </span>
+           </li>
+           <li class="cart-item">
+            <div class="row valign-wrapper">
+              <div class="col s3">
+                <img src="img/men1.jpg" alt="" class="circle responsive-img valign">
+              </div>
+              <div class="col s8 cart-description">
+                <span class="black-text cart-content valign">
+                  Men Black Suit <br><span class="blue-grey-text text-lighten-2">RM 100</span>
+                </span>
+              </div>
             </div>
-          </div>
-         </li>
-         <li class="cart-item">
-          <div class="row valign-wrapper">
-            <div class="col s3">
-              <img src="img/men2.jpg" alt="" class="circle responsive-img valign">
+           </li>
+           <li class="cart-item">
+            <div class="row valign-wrapper">
+              <div class="col s3">
+                <img src="img/men1.jpg" alt="" class="circle responsive-img valign">
+              </div>
+              <div class="col s8 cart-description">
+                <span class="black-text cart-content valign">
+                  Men Black Suit <br><span class="blue-grey-text text-lighten-2">RM 100</span>
+                </span>
+              </div>
             </div>
-            <div class="col s8 cart-description">
-              <span class="black-text cart-content valign">
-                Men Black Suit <br><span class="blue-grey-text text-lighten-2">RM 100</span>
-              </span>
+           </li>
+           <li class="cart-item">
+            <div class="row valign-wrapper">
+              <div class="col s3">
+                <img src="img/men1.jpg" alt="" class="circle responsive-img valign">
+              </div>
+              <div class="col s8 cart-description">
+                <span class="black-text cart-content valign">
+                  Men Black Suit <br><span class="blue-grey-text text-lighten-2">RM 100</span>
+                </span>
+              </div>
             </div>
-          </div>
-         </li>
-         <li class="cart-item">
-          <div class="row valign-wrapper">
-            <div class="col s3">
-              <img src="img/men.jpg" alt="" class="circle responsive-img valign">
+           </li>
+           <li class="cart-item">
+            <div class="row valign-wrapper">
+              <div class="col s3">
+                <img src="img/men1.jpg" alt="" class="circle responsive-img valign">
+              </div>
+              <div class="col s8 cart-description">
+                <span class="black-text cart-content valign">
+                  Men Black Suit <br><span class="blue-grey-text text-lighten-2">RM 100</span>
+                </span>
+              </div>
             </div>
-            <div class="col s8 cart-description">
-              <span class="black-text cart-content valign">
-                Men Black Suit <br><span class="blue-grey-text text-lighten-2">RM 100</span>
-              </span>
+           </li>
+           <li class="cart-item">
+            <div class="row valign-wrapper">
+              <div class="col s3">
+                <img src="img/men1.jpg" alt="" class="circle responsive-img valign">
+              </div>
+              <div class="col s8 cart-description">
+                <span class="black-text cart-content valign">
+                  Men Black Suit <br><span class="blue-grey-text text-lighten-2">RM 100</span>
+                </span>
+              </div>
             </div>
-          </div>
-         </li>
+           </li>
+           <li class="cart-item">
+            <div class="row valign-wrapper">
+              <div class="col s3">
+                <img src="img/men1.jpg" alt="" class="circle responsive-img valign">
+              </div>
+              <div class="col s8 cart-description">
+                <span class="black-text cart-content valign">
+                  Men Black Suit <br><span class="blue-grey-text text-lighten-2">RM 100</span>
+                </span>
+              </div>
+            </div>
+           </li>
+           <li class="cart-item">
+            <div class="row valign-wrapper">
+              <div class="col s3">
+                <img src="img/men2.jpg" alt="" class="circle responsive-img valign">
+              </div>
+              <div class="col s8 cart-description">
+                <span class="black-text cart-content valign">
+                  Men Black Suit <br><span class="blue-grey-text text-lighten-2">RM 100</span>
+                </span>
+              </div>
+            </div>
+           </li>
+         </ul>
+
        </div>
        <div class="cart-bottom">
          <div class="divider"></div>
@@ -202,8 +263,10 @@
            Subtotal: RM 300.00
          </div>
          <div class="divider"></div>
-         <a class="waves-effect waves-teal btn-flat">Button</a>
-         <a class="waves-effect waves-teal btn-flat">Button</a>
+         <div class="cart-btns">
+           <a class="waves-effect waves-teal btn-flat b-small">View</a>
+           <a class="waves-effect waves-teal btn-flat b-small">Checkout</a>
+         </div>
        </div>
      </ul>
    </nav>
